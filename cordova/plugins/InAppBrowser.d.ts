@@ -11,38 +11,38 @@ interface Window {
      * Opens a URL in a new InAppBrowser instance, the current browser instance, or the system browser.
      * @param  url     The URL to load.
      * @param  target  The target in which to load the URL, an optional parameter that defaults to _self.
-     * @param  options Options for the InAppBrowser. Optional, defaulting to: location=yes.
-     *                 The options string must not contain any blank space, and each feature's
-     *                 name/value pairs must be separated by a comma. Feature names are case insensitive.
+     * @param  options Options for the InAppBrowser. Optional, defaulting to: {location:'yes',toolbar:'yes'}.
+     *                 Feature names are case insensitive.
+     *                 For further options see: https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-inappbrowser/
      */
-    open(url: string, target?: "_self", options?: string): InAppBrowser;
+    open(url: string, target?: "_self", options?: Object): ng.IHttpPromise<any>;
     /**
      * Opens a URL in a new InAppBrowser instance, the current browser instance, or the system browser.
      * @param  url     The URL to load.
      * @param  target  The target in which to load the URL, an optional parameter that defaults to _self.
-     * @param  options Options for the InAppBrowser. Optional, defaulting to: location=yes.
-     *                 The options string must not contain any blank space, and each feature's
-     *                 name/value pairs must be separated by a comma. Feature names are case insensitive.
+     * @param  options Options for the InAppBrowser. Optional, defaulting to: {location:'yes',toolbar:'yes'}.
+     *                 Feature names are case insensitive.
+     *                 For further options see: https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-inappbrowser/
      */
-    open(url: string, target?: "_blank", options?: string): InAppBrowser;
+    open(url: string, target?: "_blank", options?: Object): ng.IHttpPromise<any>;
     /**
      * Opens a URL in a new InAppBrowser instance, the current browser instance, or the system browser.
      * @param  url     The URL to load.
      * @param  target  The target in which to load the URL, an optional parameter that defaults to _self.
-     * @param  options Options for the InAppBrowser. Optional, defaulting to: location=yes.
-     *                 The options string must not contain any blank space, and each feature's
-     *                 name/value pairs must be separated by a comma. Feature names are case insensitive.
+     * @param  options Options for the InAppBrowser. Optional, defaulting to: {location:'yes',toolbar:'yes'}.
+     *                 Feature names are case insensitive.
+     *                 For further options see: https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-inappbrowser/
      */
-    open(url: string, target?: "_system", options?: string): InAppBrowser;
+    open(url: string, target?: "_system", options?: Object): ng.IHttpPromise<any>;
     /**
      * Opens a URL in a new InAppBrowser instance, the current browser instance, or the system browser.
      * @param  url     The URL to load.
      * @param  target  The target in which to load the URL, an optional parameter that defaults to _self.
-     * @param  options Options for the InAppBrowser. Optional, defaulting to: location=yes.
-     *                 The options string must not contain any blank space, and each feature's
-     *                 name/value pairs must be separated by a comma. Feature names are case insensitive.
+     * @param  options Options for the InAppBrowser. Optional, defaulting to: {location:'yes',toolbar:'yes'}.
+     *                 Feature names are case insensitive.
+     *                 For further options see: https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-inappbrowser/
      */
-    open(url: string, target?: string, options?: string, replace?: boolean): InAppBrowser;
+    open(url: string, target?: string, options?: Object, replace?: boolean): ng.IHttpPromise<any>;
 }
 
 /**
